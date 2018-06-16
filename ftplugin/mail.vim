@@ -176,7 +176,7 @@ endif
 " Start the mail client in RO mode {{{2
 function! VimMailStartClientRO()
     if (!exists("g:VimMailClient"))
-        let g:VimMailClient="xterm -e  'mutt -R'"
+        let g:VimMailClient="urxvt -e  'mutt -R'"
     endif
     execute ":silent !".g:VimMailClient
 endfunction
